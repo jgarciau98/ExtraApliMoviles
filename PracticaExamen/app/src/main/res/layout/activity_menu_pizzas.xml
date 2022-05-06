@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+    <!--Primer Linear Contenedor de lo vertical-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/saludo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center"
+
+            android:text="Selecciona tu pizza"
+            android:textColor="#FF2222"
+            android:textSize="45dp" />
+
+        <ImageView
+            android:id="@+id/hawaiana"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:clickable="true"
+            android:src="@drawable/hawaiana" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Hawaiana $60"
+            android:textColor="#FF2222" />
+
+        <ImageView
+            android:id="@+id/italiana"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:clickable="true"
+            android:longClickable="false"
+            android:src="@drawable/italiana" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Italiana $60"
+            android:textColor="#FF2222" />
+
+        <ImageView
+            android:id="@+id/mexicana"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:clickable="true"
+            android:src="@drawable/mexicana" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Mexicana $60"
+            android:textColor="#FF2222" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/irbeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MenuBebidas"
+                app:backgroundTint="#FF2222" />
+
+            <Button
+                android:id="@+id/finped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Finalizar Pedido"
+                app:backgroundTint="#FF2222" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
